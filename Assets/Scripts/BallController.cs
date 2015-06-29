@@ -8,8 +8,7 @@ public class BallController : MonoBehaviour {
 	public float minPositionY;
 
 	private Rigidbody rb;
-	private float launchForce;
-	private float lastMousePosY;
+	private Vector3 lastMousePos;
 	private float launchStartTime;
 	private Vector3 homePosition;
 	private CameraController cameraController;
@@ -34,15 +33,17 @@ public class BallController : MonoBehaviour {
 		}
 
 		if (Input.GetMouseButtonDown (0) && !rb.useGravity) {
-			lastMousePosY = Input.mousePosition.y;
+			lastMousePos = Input.mousePosition;
 			launchStartTime = Time.time;
 			cameraController.isLockedToPlayer = false;
 		}
 
 		if (Input.GetMouseButtonUp (0) && !rb.useGravity) {
 			rb.useGravity = true;
-			launchForce = (Input.mousePosition.y - lastMousePosY)/(Time.time - launchStartTime) * launchSensitivity;
-			rb.AddForce (0.0f, 0.0f, launchForce);
+			float deltaT = (Time.time - launchStartTime);
+			float launchForceX = (Input.mousePosition.x - lastMousePos.x)/deltaT * launchSensitivity;
+			float launchForceZ = (Input.mousePosition.y - lastMousePos.y)/deltaT * launchSensitivity;
+			rb.AddForce (launchForceX, 0.0f, launchForceZ);
 		}
 
 		if (gameObject.transform.position.y < minPositionY) {
