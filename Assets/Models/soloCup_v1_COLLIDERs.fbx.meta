@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: a1afd78926b5945b4b8f1a4a7d92680b
+timeCreated: 1435393361
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: soloCupCOL10
+    100004: soloCupCOL11
+    100006: soloCupCOL12
+    100008: soloCupCOL13
+    100010: soloCupCOL14
+    100012: soloCupCOL15
+    100014: soloCupCOL16
+    100016: soloCupCOL17
+    100018: soloCupCOL18
+    100020: soloCupCOL19
+    100022: soloCupCOL2
+    100024: soloCupCOL20
+    100026: soloCupCOL21
+    100028: soloCupCOL3
+    100030: soloCupCOL4
+    100032: soloCupCOL5
+    100034: soloCupCOL6
+    100036: soloCupCOL7
+    100038: soloCupCOL8
+    100040: soloCupCOL9
+    100042: soloCupCOL22
+    400000: //RootNode
+    400002: soloCupCOL10
+    400004: soloCupCOL11
+    400006: soloCupCOL12
+    400008: soloCupCOL13
+    400010: soloCupCOL14
+    400012: soloCupCOL15
+    400014: soloCupCOL16
+    400016: soloCupCOL17
+    400018: soloCupCOL18
+    400020: soloCupCOL19
+    400022: soloCupCOL2
+    400024: soloCupCOL20
+    400026: soloCupCOL21
+    400028: soloCupCOL3
+    400030: soloCupCOL4
+    400032: soloCupCOL5
+    400034: soloCupCOL6
+    400036: soloCupCOL7
+    400038: soloCupCOL8
+    400040: soloCupCOL9
+    400042: soloCupCOL22
+    2300000: soloCupCOL10
+    2300002: soloCupCOL11
+    2300004: soloCupCOL12
+    2300006: soloCupCOL13
+    2300008: soloCupCOL14
+    2300010: soloCupCOL15
+    2300012: soloCupCOL16
+    2300014: soloCupCOL17
+    2300016: soloCupCOL18
+    2300018: soloCupCOL19
+    2300020: soloCupCOL2
+    2300022: soloCupCOL20
+    2300024: soloCupCOL21
+    2300026: soloCupCOL3
+    2300028: soloCupCOL4
+    2300030: soloCupCOL5
+    2300032: soloCupCOL6
+    2300034: soloCupCOL7
+    2300036: soloCupCOL8
+    2300038: soloCupCOL9
+    2300040: soloCupCOL22
+    3300000: soloCupCOL10
+    3300002: soloCupCOL11
+    3300004: soloCupCOL12
+    3300006: soloCupCOL13
+    3300008: soloCupCOL14
+    3300010: soloCupCOL15
+    3300012: soloCupCOL16
+    3300014: soloCupCOL17
+    3300016: soloCupCOL18
+    3300018: soloCupCOL19
+    3300020: soloCupCOL2
+    3300022: soloCupCOL20
+    3300024: soloCupCOL21
+    3300026: soloCupCOL3
+    3300028: soloCupCOL4
+    3300030: soloCupCOL5
+    3300032: soloCupCOL6
+    3300034: soloCupCOL7
+    3300036: soloCupCOL8
+    3300038: soloCupCOL9
+    3300040: soloCupCOL22
+    4300000: soloCupCOL2
+    4300002: soloCupCOL3
+    4300004: soloCupCOL4
+    4300006: soloCupCOL5
+    4300008: soloCupCOL6
+    4300010: soloCupCOL7
+    4300012: soloCupCOL8
+    4300014: soloCupCOL9
+    4300016: soloCupCOL10
+    4300018: soloCupCOL11
+    4300020: soloCupCOL12
+    4300022: soloCupCOL13
+    4300024: soloCupCOL14
+    4300026: soloCupCOL15
+    4300028: soloCupCOL16
+    4300030: soloCupCOL17
+    4300032: soloCupCOL18
+    4300034: soloCupCOL19
+    4300036: soloCupCOL20
+    4300038: soloCupCOL21
+    4300040: soloCupCOL22
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 1
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
