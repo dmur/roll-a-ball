@@ -41,9 +41,9 @@ public class BallController : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0) && !rb.useGravity) {
 			rb.useGravity = true;
 			float deltaT = (Time.time - launchStartTime);
-			float launchForceX = (Input.mousePosition.x - lastMousePos.x)/deltaT * launchSensitivity;
-			float launchForceZ = (Input.mousePosition.y - lastMousePos.y)/deltaT * launchSensitivity;
-			rb.AddForce (launchForceX, 0.0f, launchForceZ);
+			float launchForceSideways = (Input.mousePosition.x - lastMousePos.x)/deltaT * launchSensitivity;
+			float launchForceForward = (Input.mousePosition.y - lastMousePos.y)/deltaT * launchSensitivity;
+			rb.AddForce (-launchForceForward, 0.0f, launchForceSideways);
 		}
 
 		if (gameObject.transform.position.y < minPositionY) {
@@ -58,7 +58,7 @@ public class BallController : MonoBehaviour {
 
 	public void Reset () {
 		gameObject.transform.position = homePosition;
-		gameObject.transform.rotation = Quaternion.identity;
+		gameObject.transform.rotation = Quaternion.Euler(0, 270, 0);
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		rb.useGravity = false;
