@@ -316,8 +316,45 @@ ModelImporter:
     4300068: pCube5
     4300070: shit:triangle_drol
     4300072: triangle_drol
+    6400000: automan
+    6400002: bookshelf
+    6400004: bulb_01
+    6400006: bulb_02
+    6400008: bulb_03
+    6400010: chair
+    6400012: coffeeTable
+    6400014: couch
+    6400016: endTable1
+    6400018: endTable2
+    6400020: endTable3
+    6400022: fridge
+    6400024: kitchenTable
+    6400026: lampPost
+    6400028: lampShade_01
+    6400030: lampShade_02
+    6400032: lampShade_03
+    6400034: oven
+    6400036: pCube4
+    6400038: pCube5
+    6400040: pCylinder1
+    6400042: pCylinder2
+    6400044: pCylinder3
+    6400046: pCylinder4
+    6400048: pCylinder5
+    6400050: pCylinder6
+    6400052: pCylinder7
+    6400054: pCylinder8
+    6400056: pCylinder9
+    6400058: room
+    6400060: shit:triangle_drol
+    6400062: stoveOverhead
+    6400064: subwoofer
+    6400066: tableLamp 1
+    6400068: television
+    6400070: triangle_drol
+    6400072: tvTable
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -325,6 +362,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -336,9 +377,9 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
-    addColliders: 0
-    importBlendShapes: 1
+    meshCompression: 3
+    addColliders: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -353,7 +394,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0

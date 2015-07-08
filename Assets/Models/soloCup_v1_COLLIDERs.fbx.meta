@@ -112,8 +112,29 @@ ModelImporter:
     4300036: soloCupCOL20
     4300038: soloCupCOL21
     4300040: soloCupCOL22
+    6400000: soloCupCOL10
+    6400002: soloCupCOL11
+    6400004: soloCupCOL12
+    6400006: soloCupCOL13
+    6400008: soloCupCOL14
+    6400010: soloCupCOL15
+    6400012: soloCupCOL16
+    6400014: soloCupCOL17
+    6400016: soloCupCOL18
+    6400018: soloCupCOL19
+    6400020: soloCupCOL2
+    6400022: soloCupCOL20
+    6400024: soloCupCOL21
+    6400026: soloCupCOL22
+    6400028: soloCupCOL3
+    6400030: soloCupCOL4
+    6400032: soloCupCOL5
+    6400034: soloCupCOL6
+    6400036: soloCupCOL7
+    6400038: soloCupCOL8
+    6400040: soloCupCOL9
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -121,6 +142,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -132,9 +157,9 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
-    addColliders: 0
-    importBlendShapes: 1
+    meshCompression: 3
+    addColliders: 1
+    importBlendShapes: 0
     swapUVChannels: 1
     generateSecondaryUV: 0
     useFileUnits: 1

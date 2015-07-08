@@ -254,8 +254,51 @@ ModelImporter:
     4300080: beerPongTable
     4300082: kitchenChair1
     4300084: kitchenChair2
+    6400000: automan
+    6400002: beerPongTable
+    6400004: bookshelf
+    6400006: bulb_01
+    6400008: bulb_02
+    6400010: bulb_03
+    6400012: chair
+    6400014: coffeeTable
+    6400016: couch
+    6400018: endTable_Rect
+    6400020: endTable_Round
+    6400022: fridge
+    6400024: glassPane_Center
+    6400026: glassPane_Inner
+    6400028: glassPane_Inner 1
+    6400030: glassPane_Outer
+    6400032: glassPane_Outer 1
+    6400034: kitchenChair1
+    6400036: kitchenChair2
+    6400038: kitchenTable
+    6400040: lampPost
+    6400042: lampShade_01
+    6400044: lampShade_02
+    6400046: lampShade_03
+    6400048: oven
+    6400050: pCube4
+    6400052: pCylinder1
+    6400054: pCylinder2
+    6400056: pCylinder3
+    6400058: pCylinder4
+    6400060: pCylinder5
+    6400062: pCylinder6
+    6400064: pCylinder7
+    6400066: pCylinder8
+    6400068: pCylinder9
+    6400070: room
+    6400072: stoveOverhead
+    6400074: subwoofer
+    6400076: tableLamp 1
+    6400078: television
+    6400080: tvTable
+    6400082: windowFrame_LFT
+    6400084: windowFrame_RHT
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
@@ -263,6 +306,10 @@ ModelImporter:
     bakeSimulation: 0
     optimizeGameObjects: 0
     motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -274,9 +321,9 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
-    addColliders: 0
-    importBlendShapes: 1
+    meshCompression: 3
+    addColliders: 1
+    importBlendShapes: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
