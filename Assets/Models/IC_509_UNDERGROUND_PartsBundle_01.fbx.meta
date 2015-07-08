@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 6945571cfb0414d9fbe724d71bf9e475
+timeCreated: 1436346886
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: BaseBoard1
+    100002: BaseBoard2
+    100004: BaseBoard3
+    100006: BaseBoard4
+    100008: BaseBoard5
+    100010: BaseBoard6
+    100012: BaseBoard7
+    100014: CabinetLower1
+    100016: CabinetUpper
+    100018: CarpetBeveled
+    100020: Ceiling1
+    100022: CounterTop1
+    100024: DoorFrames
+    100026: FloorKitchen
+    100028: //RootNode
+    100030: room
+    100032: Sink1
+    100034: Trim
+    100036: Walls
+    100038: WindowFrame
+    400000: BaseBoard1
+    400002: BaseBoard2
+    400004: BaseBoard3
+    400006: BaseBoard4
+    400008: BaseBoard5
+    400010: BaseBoard6
+    400012: BaseBoard7
+    400014: CabinetLower1
+    400016: CabinetUpper
+    400018: CarpetBeveled
+    400020: Ceiling1
+    400022: CounterTop1
+    400024: DoorFrames
+    400026: FloorKitchen
+    400028: //RootNode
+    400030: room
+    400032: Sink1
+    400034: Trim
+    400036: Walls
+    400038: WindowFrame
+    2300000: BaseBoard1
+    2300002: BaseBoard2
+    2300004: BaseBoard3
+    2300006: BaseBoard4
+    2300008: BaseBoard5
+    2300010: BaseBoard6
+    2300012: BaseBoard7
+    2300014: CabinetLower1
+    2300016: CabinetUpper
+    2300018: CarpetBeveled
+    2300020: Ceiling1
+    2300022: CounterTop1
+    2300024: DoorFrames
+    2300026: FloorKitchen
+    2300028: Sink1
+    2300030: Walls
+    2300032: WindowFrame
+    3300000: BaseBoard1
+    3300002: BaseBoard2
+    3300004: BaseBoard3
+    3300006: BaseBoard4
+    3300008: BaseBoard5
+    3300010: BaseBoard6
+    3300012: BaseBoard7
+    3300014: CabinetLower1
+    3300016: CabinetUpper
+    3300018: CarpetBeveled
+    3300020: Ceiling1
+    3300022: CounterTop1
+    3300024: DoorFrames
+    3300026: FloorKitchen
+    3300028: Sink1
+    3300030: Walls
+    3300032: WindowFrame
+    4300000: Sink1
+    4300002: CabinetLower1
+    4300004: CounterTop1
+    4300006: WindowFrame
+    4300008: CabinetUpper
+    4300010: CarpetBeveled
+    4300012: FloorKitchen
+    4300014: DoorFrames
+    4300016: Walls
+    4300018: Ceiling1
+    4300020: BaseBoard1
+    4300022: BaseBoard2
+    4300024: BaseBoard3
+    4300026: BaseBoard4
+    4300028: BaseBoard5
+    4300030: BaseBoard6
+    4300032: BaseBoard7
+    6400000: BaseBoard1
+    6400002: BaseBoard2
+    6400004: BaseBoard3
+    6400006: BaseBoard4
+    6400008: BaseBoard5
+    6400010: BaseBoard6
+    6400012: BaseBoard7
+    6400014: CabinetLower1
+    6400016: CabinetUpper
+    6400018: CarpetBeveled
+    6400020: Ceiling1
+    6400022: CounterTop1
+    6400024: DoorFrames
+    6400026: FloorKitchen
+    6400028: Sink1
+    6400030: Walls
+    6400032: WindowFrame
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
