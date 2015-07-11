@@ -24,6 +24,8 @@ public class BallController : MonoBehaviour {
 	// Called before making any physics calcs
 	void FixedUpdate ()
 	{
+
+
 		if (!rb.useGravity) {
 			float moveHorizontal = Input.GetAxis ("Horizontal");
 			float moveVertical = Input.GetAxis ("Vertical");
