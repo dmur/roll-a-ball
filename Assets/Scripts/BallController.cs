@@ -8,9 +8,9 @@ public class BallController : MonoBehaviour {
 	public float minPositionY;
 
 	private Rigidbody rb;
+	private Vector3 homePosition;
 	private Vector3 lastMousePos;
 	private float launchStartTime;
-	private Vector3 homePosition;
 	private CameraController cameraController;
 
 
@@ -24,8 +24,6 @@ public class BallController : MonoBehaviour {
 	// Called before making any physics calcs
 	void FixedUpdate ()
 	{
-
-
 		if (!rb.useGravity) {
 			float moveHorizontal = Input.GetAxis ("Horizontal");
 			float moveVertical = Input.GetAxis ("Vertical");
@@ -49,11 +47,11 @@ public class BallController : MonoBehaviour {
 		}
 
 		if (gameObject.transform.position.y < minPositionY) {
-			Reset ();
+			GameManager.instance.EndThrow ();
 		}
 
 		if (Input.GetMouseButtonDown (1)) {
-			Reset ();
+			GameManager.instance.EndThrow ();
 		}
 
 	}
@@ -64,7 +62,6 @@ public class BallController : MonoBehaviour {
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		rb.useGravity = false;
-		cameraController.Reset ();
 	}
 
 }

@@ -13,6 +13,6 @@ public class GroundController : MonoBehaviour {
 	// Update is called once per frame
 	void OnTriggerEnter () {
 		Debug.Log ("triggered");
-		ballController.Reset ();
+		GameManager.instance.EndThrow ();
 	}
 }
