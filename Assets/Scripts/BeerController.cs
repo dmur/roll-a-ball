@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BeerController : MonoBehaviour {
 
-	public bool gameCup = true;
+	public bool isGameCup = true;
 	public GameObject beerSplashes;
 	private GameObject cup;
 	private GameObject ball;
@@ -26,12 +26,12 @@ public class BeerController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter() {
-		Instantiate (beerSplashes, transform.position, Quaternion.identity);
 		triggerTime = Time.time;
+		Instantiate (beerSplashes, transform.position, Quaternion.identity);
 	}
 
 	void RemoveCup() {
-		if ( gameCup ) cup.SetActive (false);
+		if ( isGameCup ) cup.SetActive (false);
 		ballController.Reset ();
 	}
 
