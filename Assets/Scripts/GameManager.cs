@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject ball;
 	public GameObject playSurface;
-	public GameObject camera;
+	public GameObject gameCamera;
 	public GameObject player1Rack;
 	public GameObject player2Rack;
 
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		ballController = ball.GetComponent<BallController> ();
 		playSurfaceController = playSurface.GetComponent<PlaySurfaceController> ();
-		cameraController = camera.GetComponent<CameraController> ();
+		cameraController = gameCamera.GetComponent<CameraController> ();
 
 		players = new List<Player> () {
 			new Player ("player1"),
@@ -62,6 +62,7 @@ public class GameManager : MonoBehaviour {
 		cameraController.Reset();
 		if (scored) {
 			activePlayer.score++;
+			Debug.Log ("Update player score: " + activePlayer.score);
 		}
 	}
 }

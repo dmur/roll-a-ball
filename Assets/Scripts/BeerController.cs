@@ -32,7 +32,7 @@ public class BeerController : MonoBehaviour {
 
 	void RemoveCup() {
 		if ( isGameCup ) cup.SetActive (false);
-		GameManager.instance.EndThrow ();
+		GameManager.instance.EndThrow (true);
 	}
 
 }
