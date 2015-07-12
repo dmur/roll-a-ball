@@ -5,13 +5,20 @@ public class BallController : MonoBehaviour {
 
 	public float trackingSpeed;
 	public float launchSensitivity;
+
+	// The ball is considered out of bounds if it goes below this position.
 	public float minPositionY;
 
 	private Rigidbody rb;
 	private Vector3 homePosition;
-	private Vector3 lastMousePos;
+	private Vector3 lastMousePosition;
 	private float launchStartTime;
 	private CameraController cameraController;
+
+	// Out of bounds reset system w/ delay
+	private bool hasMovedOutOfPlay;
+	private float timeMovedOutOfPlay;
+	private float outOfPlayResetDelay = 2.0f;
 
 
 	void Start () 
@@ -19,6 +26,7 @@ public class BallController : MonoBehaviour {
 		rb = GetComponent<Rigidbody> ();
 		homePosition = gameObject.transform.position;
 		cameraController = GameObject.FindGameObjectWithTag ("MainCamera").GetComponent<CameraController> ();
+		Reset ();
 	}
 
 	// Called before making any physics calcs
@@ -33,7 +41,7 @@ public class BallController : MonoBehaviour {
 		}
 
 		if (Input.GetMouseButtonDown (0) && !rb.useGravity) {
-			lastMousePos = Input.mousePosition;
+			lastMousePosition = Input.mousePosition;
 			launchStartTime = Time.time;
 			cameraController.isLockedToPlayer = false;
 		}
@@ -41,15 +49,21 @@ public class BallController : MonoBehaviour {
 		if (Input.GetMouseButtonUp (0) && !rb.useGravity) {
 			rb.useGravity = true;
 			float deltaT = (Time.time - launchStartTime);
-			float launchForceSideways = (Input.mousePosition.x - lastMousePos.x)/deltaT * launchSensitivity;
-			float launchForceForward = (Input.mousePosition.y - lastMousePos.y)/deltaT * launchSensitivity;
+			float launchForceSideways = (Input.mousePosition.x - lastMousePosition.x)/deltaT * launchSensitivity;
+			float launchForceForward = (Input.mousePosition.y - lastMousePosition.y)/deltaT * launchSensitivity;
 			rb.AddForce (-launchForceForward, 0.0f, launchForceSideways);
 		}
 
-		if (gameObject.transform.position.y < minPositionY) {
+		if (!hasMovedOutOfPlay && gameObject.transform.position.y < minPositionY) {
+			hasMovedOutOfPlay = true;
+			timeMovedOutOfPlay = Time.time;
+		}
+
+		if (hasMovedOutOfPlay && Time.time > timeMovedOutOfPlay + outOfPlayResetDelay) {
 			GameManager.instance.EndThrow ();
 		}
 
+		// TODO: Remove in production
 		if (Input.GetMouseButtonDown (1)) {
 			GameManager.instance.EndThrow ();
 		}
@@ -62,6 +76,8 @@ public class BallController : MonoBehaviour {
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		rb.useGravity = false;
+		timeMovedOutOfPlay = -outOfPlayResetDelay;
+		hasMovedOutOfPlay = false;
 	}
 
 }
