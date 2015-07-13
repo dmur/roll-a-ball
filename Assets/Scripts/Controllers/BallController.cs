@@ -5,16 +5,16 @@ public class BallController : MonoBehaviour {
 
 	public float trackingSpeed;
 	public float launchSensitivity;
+	public float playerLaunchDirection = 1.0f;
+	public Vector3 homePosition;
 
 	// The ball is considered out of bounds if it goes below this position.
 	public float minPositionY;
 
 	private Rigidbody rb;
-	private Vector3 homePosition;
 	private Vector3 lastMousePosition;
 	private float launchStartTime;
 	private CameraController cameraController;
-
 	// Out of bounds reset system w/ delay
 	private bool hasMovedOutOfPlay;
 	private float timeMovedOutOfPlay;
@@ -51,7 +51,7 @@ public class BallController : MonoBehaviour {
 			float deltaT = (Time.time - launchStartTime);
 			float launchForceSideways = (Input.mousePosition.x - lastMousePosition.x)/deltaT * launchSensitivity;
 			float launchForceForward = (Input.mousePosition.y - lastMousePosition.y)/deltaT * launchSensitivity;
-			rb.AddForce (-launchForceForward, 0.0f, launchForceSideways);
+			rb.AddForce (-launchForceForward * playerLaunchDirection, 0.0f, launchForceSideways * playerLaunchDirection);
 		}
 
 		if (!hasMovedOutOfPlay && gameObject.transform.position.y < minPositionY) {
