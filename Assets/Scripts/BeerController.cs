@@ -7,7 +7,7 @@ public class BeerController : MonoBehaviour {
 	public GameObject beerSplashes;
 	private GameObject cup;
 	private GameObject ball;
-	private BallController ballController;
+	//private BallController ballController;
 	private float cupRemovalDelay = 1.0f;
 	private float triggerTime = 0.0f;
 
@@ -15,7 +15,7 @@ public class BeerController : MonoBehaviour {
 	void Start () {
 		cup = gameObject.transform.parent.gameObject;
 		ball = GameObject.FindGameObjectWithTag ("Player");
-		ballController = ball.GetComponent<BallController> ();
+		//ballController = ball.GetComponent<BallController> ();
 	}
 	
 	// Update is called once per frame
@@ -32,7 +32,7 @@ public class BeerController : MonoBehaviour {
 
 	void RemoveCup() {
 		if ( isGameCup ) cup.SetActive (false);
-		GameManager.instance.EndThrow (true);
+		//GameManager.instance.EndThrow (true);
 	}
 
 }

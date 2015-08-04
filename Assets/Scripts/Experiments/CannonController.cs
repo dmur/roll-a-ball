@@ -6,10 +6,11 @@ public class CannonController : MonoBehaviour {
 	public float power = 1.0f;
 	public float fireRate = 1.0f;
 	public float ballLifespan = 1.0f;
+	public bool firing = false;
+	public int ballsFired = 0;
 
-	public GameObject ballProjectile;
+	public Rigidbody ballProjectile;
 	public GameObject ballEmitter;
-	private Rigidbody ballRB;
 
 
 	// Use this for initialization
@@ -24,20 +25,31 @@ public class CannonController : MonoBehaviour {
 	
 	}
 
-	// FixedUpdate is called before pphysics calcs
+	// FixedUpdate is called before physics calcs
 	void FixedUpdate () {
 
-		if (Input.GetMouseButtonDown (0)) {
-
+		if (Input.GetMouseButtonDown (0) && ( !firing )) {
+			firing = true;
+			InvokeRepeating("Fire", 0.0f, fireRate);
 
 		}
+		else if (Input.GetMouseButtonUp (0) && firing ) {
+			firing = false;
+			CancelInvoke("Fire");
+			
+		}
+
 		
 	}
 
 	// Update is called once per frame
 	void Fire () {
-		GameObject ball = Instantiate (ballProjectile, ballEmitter.transform.position, Quaternion.identity) as GameObject;
-		ballRB.AddForce (0.0f, 1.0f, 0.0f);
-	}
+		//Rigidbody ball = Instantiate (ballProjectile, ballEmitter.transform.position, Quaternion.identity) as Rigidbody;
+		ballsFired ++;
+		string thisBall = ballsFired.ToString("0000");
+		Rigidbody ball; 
+		ball = Instantiate (ballProjectile, ballEmitter.transform.position, Quaternion.identity) as Rigidbody;
+		ball.name = ("Ball_" + thisBall );
+		ball.AddForce (ballEmitter.transform.forward * power);}
 
 }

@@ -3,7 +3,8 @@ guid: 3137da9c73de24492a662660e940e06e
 timeCreated: 1435735059
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    8900000: generatedCubemap
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -45,7 +46,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
-  textureType: -1
+  textureType: 0
   buildTargetSettings: []
   spriteSheet:
     sprites: []
